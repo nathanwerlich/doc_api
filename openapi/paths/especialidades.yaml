@@ -1,0 +1,19 @@
+post:
+  tags:
+    - Formato do POST que o PEC aceita
+  summary: Recebe especialidades
+  description: Busca as especialidades
+  operationId: getEspecialidade
+  requestBody:
+    description: Dados das especialidades
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/dadosEspecialidade'
+  responses:
+    '201':
+      description: Especialidades atualizadas
+    '400':
+      description: Não foi possivel atualizar as especialidades
+    '501':
+      description: Servidor indisponivel

@@ -1,0 +1,12 @@
+required:
+  - id
+  - nome
+type: object
+properties:
+  id:
+    type: number
+    format: ID
+    example: 123
+  nome:
+    type: string
+    example: CONSULTA EM CIRURGIA ONCOLÓGICA

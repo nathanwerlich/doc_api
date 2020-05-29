@@ -1,0 +1,29 @@
+required:
+  - classificacaoRisco
+  - cnsCidadao
+  - dataEncaminhamento
+  - especialidade
+  - token
+type: object
+properties:
+  token:
+    type: string
+    format: uuid
+    example: d290f1ee-6c54-4b01-90e6-d701748f0851
+  especialidade:
+    type: string
+    example: acupunturista
+  classificacaoRisco:
+    type: string
+    example: Emergência
+  telefone:
+    type: string
+    format: string
+    example: 48 9 98855-4433
+  cnsCidadao:
+    type: string
+    example: '155929702510002'
+  dataEncaminhamento:
+    type: string
+    format: date-time
+    example: 2016-08-29T09:12:33.001Z

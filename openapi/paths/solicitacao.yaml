@@ -1,0 +1,19 @@
+post:
+  tags:
+    - Post que o PEC realiza
+  summary: Adiciona uma solicitação
+  description: Envia uma requisição para o orgão regulador
+  operationId: addSolicitacao
+  requestBody:
+    description: Dados da solicitação
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/dadosSolicitacao'
+  responses:
+    '201':
+      description: Solicitação recebida
+    '400':
+      description: Input ou objeto invalido
+    '409':
+      description: Já existe uma solicitação identica
